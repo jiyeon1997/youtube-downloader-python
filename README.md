@@ -8,6 +8,13 @@ design source : https://github.com/yasoob/youtube-dl-GUI
 
 ![image](https://user-images.githubusercontent.com/45894275/52190625-7b8a5180-2883-11e9-9ef3-b311f7606a9c.png)
 
+### REQUIREMETNS
+
+1. pyqt5 ( pip install pyqt5 )
+
+2. pytube ( pip install pytube ) 
+
+3. ffmpeg
 
 
 ### HOW TO RUN
