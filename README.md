@@ -10,11 +10,11 @@ design source : https://github.com/yasoob/youtube-dl-GUI
 
 ### REQUIREMENTS
 
-1. pyqt5 ( pip install pyqt5 )
++ pyqt5 ( pip install pyqt5 )
 
-2. pytube ( pip install pytube ) 
++ pytube ( pip install pytube ) 
 
-3. ffmpeg
++ ffmpeg
 
 
 ### HOW TO RUN
