@@ -10,9 +10,11 @@ design source : https://github.com/yasoob/youtube-dl-GUI
 
 ### REQUIREMENTS
 
-+ pyqt5 ( pip install pyqt5 )
++ python 3.5
 
-+ pytube ( pip install pytube ) 
++ pyqt5 
+
++ pytube 
 
 + ffmpeg
 
@@ -35,7 +37,13 @@ design source : https://github.com/yasoob/youtube-dl-GUI
 
 If you download too much, you are likely to be banned from YouTube.
 
-Let me know what features you'd like to add.
+### AUTHOR
+
+Ji Yeon, Cheon 
+
+email : somos3993@gmail.com
+
+Let me know what features you'd like to add or error.
 
 Thank you!
 
