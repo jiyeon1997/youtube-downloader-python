@@ -2,9 +2,9 @@
 
 ### DESIGN
 
-I am allowed the design of Yasoob
++ I am allowed the design of Yasoob
 
-design source : https://github.com/yasoob/youtube-dl-GUI
++ design source : https://github.com/yasoob/youtube-dl-GUI
 
 ![image](https://user-images.githubusercontent.com/45894275/52190625-7b8a5180-2883-11e9-9ef3-b311f7606a9c.png)
 
@@ -35,17 +35,17 @@ design source : https://github.com/yasoob/youtube-dl-GUI
 ### PRECAUTIONS
 
 
-If you download too much, you are likely to be banned from YouTube.
++ If you download too much, you are likely to be banned from YouTube.
 
 ### AUTHOR
 
-Ji Yeon, Cheon 
++ Ji Yeon, Cheon 
 
-email : somos3993@gmail.com
++ email : somos3993@gmail.com
 
-Let me know what features you'd like to add or error.
++ Let me know what features you'd like to add or error.
 
-Thank you!
++ Thank you!
 
 
 
