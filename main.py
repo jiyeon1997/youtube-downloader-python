@@ -7,27 +7,38 @@ import pytube
 import os
 import re
 import subprocess
-from ui.Design import Ui_MainWindow
+from ui.Design2 import Ui_MainWindow
 
 class YoutubeDownloader(QMainWindow, Ui_MainWindow) :
     def __init__(self) :
         super().__init__()
 
         self.setupUi(self)
-        self.setWindowTitle('Youtube Downloader v1.0')
+        self.setWindowTitle('Youtube Downloader v2.0')
 
         self.comboBox.addItem('mp3')
         self.comboBox.addItem('avi')
         self.comboBox.addItem('mov')
         self.comboBox.addItem('wmv')
 
+        self.extension.addItem('mp3')
+        self.extension.addItem('avi')
+        self.extension.addItem('mov')
+        self.extension.addItem('wmv')
+        self.extension.addItem('wav')
+
         self.initSignal()
+
         self.statusbar.showMessage('Ready.')
 
     # 시그널 초기화
     def initSignal(self) :
         self.downloadButton.clicked.connect(self.downloadWork)
         self.toolButton.clicked.connect(self.savePathWork)
+        self.fileToolButton.clicked.connect(self.selectFileWork)
+        self.toolButton_2.clicked.connect(self.selectPathWork)
+        self.convertButton.clicked.connect(self.convertWork)
+        self.tabWidget.currentChanged.connect(self.tabClicked)
 
     # 툴 박스 눌렀을 때
     @pyqtSlot()
@@ -72,10 +83,51 @@ class YoutubeDownloader(QMainWindow, Ui_MainWindow) :
                     os.path.join(down_dir, oriFiileName),
                     os.path.join(down_dir, newFileName + '.' + str(self.comboBox.currentText()))
                 ])
-            self.statusbar.showMessage('Finished')
+            self.statusbar.showMessage('Download Finished')
 
         else :
             QMessageBox.about(self,'Error', '유튜브 url형식이 아닙니다.')
+
+    # tabWidget 눌렀을 때
+    @pyqtSlot()
+    def tabClicked(self) :
+        self.statusbar.showMessage('Ready.')
+
+    # Convert file 눌렀을 때
+    @pyqtSlot()
+    def selectFileWork(self) :
+        self.fname = QFileDialog.getOpenFileName(self, 'select the file')
+        self.fileTextEdit.setText(self.fname[0])
+
+    # Convert toolbutton 눌렀을 때
+    @pyqtSlot()
+    def selectPathWork(self) :
+        fpath = QFileDialog.getExistingDirectory(self, 'Select the Directory')
+        self.savePathEdit.setText(fpath)
+
+    # Convert file logic
+    @pyqtSlot()
+    def convertWork(self) :
+        file_dir = self.fileTextEdit.text()
+        down_dir = self.savePathEdit.text()
+
+        if file_dir is None or file_dir == '' or not file_dir :
+            QMessageBox.about(self, 'Error', 'Select the file')
+            return None
+
+        if down_dir is None or down_dir == '' or not down_dir :
+            QMessageBox.about(self, 'Error', 'Select the Directory')
+            return None
+
+        fileName = os.path.basename(file_dir)
+        newFileName = os.path.splitext(fileName)[0]
+
+        subprocess.call(['ffmpeg','-i',
+            os.path.join(file_dir),
+            os.path.join(down_dir, newFileName + '.' + str(self.extension.currentText()))
+        ])
+
+        self.statusbar.showMessage('Convert Finished')
 
 if __name__ == '__main__' :
     app = QApplication(sys.argv)
