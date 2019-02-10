@@ -2,7 +2,7 @@
 
 Version 2.0 has been deployed. Please check the release.
 
-### DESIGN
+### Design
 
 + I am allowed the design of Yasoob
 
@@ -10,7 +10,7 @@ Version 2.0 has been deployed. Please check the release.
 
 ![image](https://user-images.githubusercontent.com/45894275/52190625-7b8a5180-2883-11e9-9ef3-b311f7606a9c.png)
 
-### REQUIREMENTS
+### Requirements
 
 + python 3.5
 
@@ -21,7 +21,7 @@ Version 2.0 has been deployed. Please check the release.
 + ffmpeg
 
 
-### HOW TO RUN
+### How to run
 
 
 
@@ -34,12 +34,12 @@ Version 2.0 has been deployed. Please check the release.
 3. if you want to convert : macOS -> install ffmpeg using home brew ; Windows -> download ffmpeg
 
 
-### PRECAUTIONS
+### Precautions
 
 
 + If you download too much, you are likely to be banned from YouTube.
 
-### AUTHOR
+### Author
 
 + Ji Yeon, Cheon 
 
