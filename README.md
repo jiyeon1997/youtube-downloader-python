@@ -1,5 +1,7 @@
 # youtube-downloader-v1.0
 
+Version 2.0 has been deployed. Please check the release.
+
 ### DESIGN
 
 + I am allowed the design of Yasoob
