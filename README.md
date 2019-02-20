@@ -43,6 +43,8 @@ Version 2.0 has been deployed. Please check the release.
 
 + https://niceman.tistory.com/92
 
++ inflearn (파이썬 입문 및 웹 크롤링을 활용한 다양한 자동화 어플리케이션 제작하기)
+
 ### Author
 
 + Ji Yeon, Cheon 
