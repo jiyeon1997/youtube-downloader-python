@@ -39,6 +39,10 @@ Version 2.0 has been deployed. Please check the release.
 
 + If you download too much, you are likely to be banned from YouTube.
 
+### Reference
+
++ https://niceman.tistory.com/92
+
 ### Author
 
 + Ji Yeon, Cheon 
