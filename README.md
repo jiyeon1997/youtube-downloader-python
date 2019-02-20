@@ -41,9 +41,9 @@ Version 2.0 has been deployed. Please check the release.
 
 ### Reference
 
-+ https://niceman.tistory.com/92
++ [blog](https://niceman.tistory.com/92)
 
-+ inflearn (파이썬 입문 및 웹 크롤링을 활용한 다양한 자동화 어플리케이션 제작하기)
++ [inflearn](https://www.inflearn.com/course/python-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9B%B9-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%81%AC%EB%A1%A4%EB%A7%81/)
 
 ### Author
 
